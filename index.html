@@ -118,3 +118,54 @@
 
     @media (max-width: 480px) {
       h2 {
+        font-size: 1.5rem;
+      }
+
+      input, textarea, button {
+        font-size: 0.95rem;
+      }
+
+      .consentimento {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .consentimento span {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://raw.githubusercontent.com/acidjx/formulariocontactop2g/main/LOGO-PERFECT2GETHER-SHORT.png" alt="Logotipo Perfect2Gether" class="logo" />
+
+  <div class="container">
+    <h2>Pedido de Contacto</h2>
+    <form action="#" method="post">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <input type="tel" name="telefone" placeholder="Seu contacto telefónico" required />
+      <textarea name="mensagem" rows="5" placeholder="Descreva o propósito do seu contacto" required></textarea>
+
+      <div class="consentimento">
+        <input type="checkbox" name="consentimento" required />
+        <span>
+          Autorizo o contacto por parte da empresa e aceito os 
+          <a href="#" target="_blank">Termos e Condições</a>.
+        </span>
+      </div>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div class="return-btn">
+      <a href="https://seusite.canva.site">
+        <button>Voltar à Página Inicial</button>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
